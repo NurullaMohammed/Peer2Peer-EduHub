@@ -50,3 +50,24 @@
 ## Contributing
 
 Feel free to fork the repository and submit pull requests with improvements or bug fixes.
+
+
+
+##Login Page 
+![image](https://github.com/user-attachments/assets/8dc49cf9-8ce8-4f0f-ad02-ec9414fb7258)
+
+##Register pages
+![image](https://github.com/user-attachments/assets/a21413f5-4121-4d3d-bfff-0c9ea2bfff70)
+![image](https://github.com/user-attachments/assets/f45f17e2-1b34-4ec4-a4dd-815404d3df56)
+![image](https://github.com/user-attachments/assets/7f732a6d-e9ec-43bb-8492-150b93eb2c26)
+
+##Home Page
+![image](https://github.com/user-attachments/assets/22f8111f-b9b1-40b2-84de-43ed150ccd25)
+
+##User Details Page
+![image](https://github.com/user-attachments/assets/7a877c78-13d5-4568-a27b-c8fa3e52773d)
+
+
+
+
+
