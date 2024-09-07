@@ -59,7 +59,8 @@ Feel free to fork the repository and submit pull requests with improvements or b
 ## Register pages
 ![image](https://github.com/user-attachments/assets/a21413f5-4121-4d3d-bfff-0c9ea2bfff70)
 ![image](https://github.com/user-attachments/assets/f45f17e2-1b34-4ec4-a4dd-815404d3df56)
-![image](https://github.com/user-attachments/assets/7f732a6d-e9ec-43bb-8492-150b93eb2c26)
+![image](https://github.com/user-attachments/assets/8c1c09ce-d464-42d0-9c94-f875de070c7c)
+
 
 ## Home Page
 ![image](https://github.com/user-attachments/assets/22f8111f-b9b1-40b2-84de-43ed150ccd25)
