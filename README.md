@@ -19,7 +19,7 @@
 - **Frontend:** HTML, JavaScript, CSS
 - **Backend:** Java Servlets, JSP pages
 - **Server:** Apache Tomcat
-- **Database:** (Specify the database used, if applicable)
+- **Database:** MYSQL
 
 ## Setup and Usage
 
