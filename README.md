@@ -38,7 +38,8 @@
 4. **Features:**
    - **Registration:** Access the registration page to sign up as a student.
    - **Login:** Log in to the system to access your profile and interact with the subject list.
-   - **Subject List:** View and select subjects from the sidebar to find students who are experts in those areas.
+   - **Home Page:** View and select subjects from the sidebar to find students who are experts in those areas.
+   - **Student Details Page** View the details of the selected student from the home page
 
 ## Development Notes
 
