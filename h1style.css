@@ -1,0 +1,290 @@
+/* Basic styling */
+body {
+    font-family: 'Tilt Neon', sans-serif;
+    background-color: #edf7ff;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Header */
+header {
+    background-color: #ffffff;
+    color: #fff;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 10;
+    /*box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);  Box shadow */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+
+}
+h3 {
+    font-family: 'Tilt Neon', sans-serif;
+    color: #006aff; /* Green color, adjust as needed */
+    font-size: 20px; /* Adjust font size as needed */
+    -webkit-text-stroke: 0.01px rgb(81, 84, 248);
+   /*  border: 1px solid #000; 1px black border */
+    /*text-shadow: 1px 1px 1px #000;  1px shadow with offset */
+}
+
+
+/* Style the navigation menu container */
+.nav-container {
+    background-color: #0079D3; /* Reddit's blue color */
+    padding: 10px 0;
+}
+
+/* Style for navigation buttons */
+.nav-button {
+    color: blue; /* Text color */
+    font-family: 'Tilt Neon', cursive; /* Font family */
+   /* text-shadow: 1px 1px black;  Text shadow */
+    border: 1px solid blue; /* Add a blue border */
+    padding: 5px 10px; /* Adjust padding to your liking */
+    margin: 0 5px; /* Adjust margin to space them out */
+    border-radius: 5px; /* Add rounded corners */
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+
+/* Hover effect for navigation buttons */
+.nav-button:hover {
+    background-color: blue; /* Background color on hover */
+    color: white; /* Text color on hover */
+    text-shadow: none; /* Remove text shadow on hover if needed */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #079bfd;
+    font-size: 15px;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+.blue-text {
+    color: rgb(69, 69, 230);
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+.search {
+    display: flex;
+}
+
+.search input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search button {
+    background-color: #2559f5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* Left Sidebar Styles */
+.left-sidebar {
+    width: 180px;
+    background-color: #edf7ff; /* Background color */
+    color: #030202; /* Text color */
+    position: fixed;
+    top: 60px;
+    left: 30px;/* Adjust top position to leave space for the header */
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.topics-section {
+    font-family: 'Tilt Neon', sans-serif;
+    padding-top: 25px;
+}
+
+.project-section {
+    font-family: 'Tilt Neon', sans-serif;
+}
+
+.section-heading {
+    font-weight: bold;
+}
+
+.subject-list {
+    margin-left: 10px;
+    list-style: none;
+    padding: 0;
+}
+
+.subject-item {
+    margin: 0px 0;
+    padding: 5px 20px;
+    font-style: italic;
+}
+
+/* Style for the section divider line */
+.section {
+    margin-bottom: 20px;
+}
+
+/* Style for the section divider line */
+.section-divider {
+    border-top: 1px solid #ccc;
+    margin: 15px 0;
+}
+
+/* Style for the "See More" button */
+#seeMoreBtn {
+    color: blue;
+    font-family: 'Tilt Neon', cursive;
+    border: 1px solid blue;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100px; /* Make the button the same width as the sidebar */
+}
+
+/* Hover effect for the "See More" button */
+#seeMoreBtn:hover {
+    background-color: blue;
+    color: white;
+    text-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Main Content */
+main {
+    margin-left: 220px;
+    margin-right: 180px;
+    padding: 20px;
+}
+
+.content-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    min-height: calc(100vh - 60px);
+    overflow: auto;
+}
+
+.data-container {
+    border: 1px solid #cbc7c7; /* Add the border */
+    border-radius: 10px;
+    padding: 10px; /* Add padding */
+    margin: 8px;
+    display: flex;
+}
+
+
+
+.data-container {
+    display: flex;
+    border: 1px solid #cbc7c7;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.data-container:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    background-color: #f1f1f1;
+}
+
+.left-column {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.right-column {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.photo {
+    width: 75px; /* Adjust the width to your preferred size */
+    height: 75px; /* Adjust the height to your preferred size */
+    border-radius: 50%; /* Make the photo circular */
+    overflow: hidden;
+}
+
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.subject-name {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.subject-by {
+    text-align: center;
+    margin-top: 8px;
+    
+}

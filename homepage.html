@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<meta charset="UTF-8">
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .container {
+                border: 1px solid #cbc7c7;
+                border-radius: 10px;
+                padding: 10px;
+                margin: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+            .subject-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .subject-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+            .subject-name {
+                font-weight: bold;
+                text-align: center;
+            }
+            .subject-item {
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            margin: 0;
+            color: inherit;
+            text-align: left;
+        }
+        .subject-item:hover {
+            background-color: #e0e0e0;
+        }
+            .subject-info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 14px;
+            }
+        </style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="h1style.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+
+        <title>Home page</title>
+    </head>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const subjectList = document.getElementById("subjectList");
+            const seeMoreBtn = document.getElementById("seeMoreBtn");
+    
+            const subjects = subjectList.querySelectorAll(".subject-item");
+            const maxVisibleSubjects = 3;
+    
+            // Function to toggle visibility of subjects
+            function toggleSubjects() {
+                subjects.forEach((subject, index) => {
+                    if (index >= maxVisibleSubjects) {
+                        subject.style.display = subject.style.display === "none" ? "list-item" : "none";
+                    }
+                });
+    
+                // Change the button label based on visibility
+                const visibleSubjects = subjectList.querySelectorAll(".subject-item:not([style='display: none;'])");
+                seeMoreBtn.textContent = visibleSubjects.length < subjects.length ? "See more" : "See less";
+            }
+    
+            // Initial toggle to show only the first 3 subjects
+            toggleSubjects();
+    
+            seeMoreBtn.addEventListener("click", toggleSubjects);
+        });
+    </script>
+    
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <h3>Peer 2 Peer</h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-button">Home</a></li>
+                <li><a href="#" class="nav-button">Popular</a></li>
+                <li><a href="#" class="nav-button">All</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+        <div class="chat-icon">
+            <!-- Chat icon here -->
+        </div>
+        <div class="profile-icon">
+            <!-- Profile icon here -->
+        </div>
+    </header>
+
+    <div class="content-wrapper">
+    <aside class="left-sidebar">
+        <!-- ... Your existing content ... -->
+
+        <!-- Topics section with vertical subjects list -->
+        <div class="topics-section">
+            <div class="section-heading">Subjects</div>
+            <ul class="subject-list" id="subjectList">
+                <li class="subject-item">C Programming</li>
+                <li class="subject-item">Operating System</li>
+                <li class="subject-item">Data Stuctures</li>
+                <li class="subject-item">Java</li>
+                <li class="subject-item">Python</li>
+                <li class="subject-item">DBMS</li>
+            </ul>
+            <button id="seeMoreBtn" class="button-small">See more</button>
+        </div>
+        <hr class="section-divider"> 
+        <div class="project-section">
+            <div class="section-heading">Projects</div>
+            <ul class="subject-list" id="subjectList">
+                <li class="subject-item">IOT Projects</li>
+                <li class="subject-item">ML Projects</li>
+                <li class="subject-item">Android Apps</li>
+                <li class="subject-item" >Full Stack</li>
+                <li class="subject-item" >Cloud Computing</li>
+                <li class="subject-item" >AI Projects</li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main>
+        <div class="content-container">
+            <div class="data-container" >
+                <div class="left-column">
+                    <div class="photo">
+                        <img src="luffy.jpg" alt="Subject Photo">
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div class="subject-name">Subject Name</div>
+                    <div class="subject-by">by Name</div>
+                </div>
+            </div>
+            
+            
+      
+            <div class="data-container">
+                <div class="left-column">
+                    <div class="photo">
+                        <img src="luffy.jpg" alt="Subject Photo">
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div class="subject-name">Subject Name</div>
+                    <div class="subject-by">by Name</div>
+                </div>
+            </div>
+            
+      
+            <div class="data-container">
+                <div class="left-column">
+                    <div class="photo">
+                        <img src="luffy.jpg" alt="Subject Photo">
+                    </div>
+                </div>
+                <div class="right-column">
+                    <div class="subject-name">Subject Name</div>
+                    <div class="subject-by">by Name</div>
+                </div>
+            </div>
+            
+        </div>
+      </main>
+      
+    </div>
+    <!-- JavaScript (for interactivity) -->
+    <script src="Jscript.js"></script>
+</body>
+</html>

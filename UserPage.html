@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="h1style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Tilt Neon', sans-serif;
+        }
+
+        header {
+            background-color: #ffffff;
+            color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            max-width: 50px;
+            margin-right: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav li {
+            margin-right: 15px;
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+        }
+
+        .search input {
+            padding: 5px;
+            margin-right: 5px;
+        }
+
+        main {
+            background-color: #fff;
+            padding: 50px;
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .Top-row {
+            display: flex;
+            justify-content: center;
+        }
+
+        .photo {
+            width: 200px; /* Adjust the width to your preferred size */
+            height: 200px; /* Adjust the height to your preferred size */
+            border-radius: 20px; /* Make the box rounded */
+            overflow: hidden;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .second-row{
+            margin-top: 10px;
+            text-align: center;
+        }
+        .bottom-row{
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px;
+            background-color: rgb(0, 88, 240);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+         background-color: #1473e6; /* Dark blue background color on hover */
+        color: white; /* Text color on hover */
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6); /* Add a subtle box shadow on hover */
+        transform: translateY(-2px); /* Move the button up slightly on hover */
+        transition: background-color 0.3s, color 0.3s, box-shadow 0.3s, transform 0.3s; /* Add a smooth transition effect */
+        }
+        .Name{
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* Add more styles as needed */
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <h3>Peer 2 Peer</h3>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-button">Home</a></li>
+                <li><a href="#" class="nav-button">Popular</a></li>
+                <li><a href="#" class="nav-button">All</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Search">
+            <button>Search</button>
+        </div>
+        <div class="chat-icon">
+            <!-- Chat icon here -->
+        </div>
+        <div class="profile-icon">
+            <!-- Profile icon here -->
+        </div>
+    </header>
+    <main>
+       
+        <div class="main-container">
+            <div class="Top-row">
+                <div class="photo">
+                    <img src="luffy.jpg" alt="person">
+                </div>
+            </div>
+            <div class="second-row">
+                <div class="Name">Name</div>
+            </div>
+            <div class="second-row">
+                <div class="Details">Details 
+                </div>
+            </div>
+            <div class="bottom-row">
+                <div class="button">
+                    <button onclick="openWhatsApp()">Contact now</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function openWhatsApp() {
+            // Replace the "1234567890" with the actual WhatsApp number
+            window.location.href = 'https://wa.me/1234567890';
+        }
+    </script>
+</body>
+
+</html>

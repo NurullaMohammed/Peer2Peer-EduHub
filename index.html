@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Registration Form</title>
+    <link rel="stylesheet" href="styleforIndex.css">
+</head>
+<body>
+    <div class="container">
+        <header>Registration</header>
+        <form action="/RegistrationServlet" method="POST" id="registrationForm" enctype="multipart/form-data">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" name="fullName" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" name="dob" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="email" placeholder="Enter your email" name="email" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="text" placeholder="Enter mobile number" name="mobile" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select name="gender" required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>Hostler/Day Scholar</label>
+                            <select name="hostler" required>
+                                <option>Hostler</option>
+                                <option>Day Scholar</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="details ID">
+                    <span class="title">Student Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Branch</label>
+                            <select name="branch" required>
+                                <option disabled selected>Select Branch</option>
+                                <option>CSE</option>
+                                <option>ECE</option>
+                                <option>CE</option>
+                                <option>ME</option>
+                                <option>IT</option>
+                                <option>EEE</option>
+                            </select>
+                        </div>
+                        <div class="input-field">
+                            <label>Roll Number</label>
+                            <input type="text" name="rollNumber" placeholder="Enter your rollno" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Year</label>
+                            <input type="number" name="year" min="1" max="4" placeholder="Enter your year" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Semester</label>
+                            <input type="text" name="semester" placeholder="Enter current Semester" required>
+                        </div>
+                        <div class="input-field">
+                            <label>CGPA</label>
+                            <input type="text" name="cgpa" placeholder="Enter your CGPA" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Year of Pass</label>
+                            <input type="date" name="yearOfPass" placeholder="Enter passed out year" required>
+                        </div>
+                    </div>
+                    <button class="nextBtn" type="button">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="form second">
+                <div class="details profile-picture-section">
+                    <span class="title">Profile Picture & Subject Selection</span>
+                    <div class="column">
+                        <div class="upload-container">
+                            <div class="circle" id="photo-circle">
+                                <span id="upload-text">Click here to upload photo</span>
+                                <input type="file" id="photo-input" style="display:none;" accept="image/*" name="profilePicture">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column subject-selection">
+                        <div class="row">
+                            <select id="subject-dropdown" name="subjects" multiple>
+                                <option disabled selected>Select subjects</option>
+                                <option value="Math">Math</option>
+                                <option value="Science">Science</option>
+                                <option value="English">English</option>
+                                <option value="History">History</option>
+                            </select>
+                        </div>
+                        <div class="row selected-subjects">
+                            <!-- Selected subjects will appear here -->
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <div class="backBtn" type="button">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                        <button class="submit" type="submit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="scriptforIndex.js"></script>
+</body>
+</html>
