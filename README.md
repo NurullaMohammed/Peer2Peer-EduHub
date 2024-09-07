@@ -25,7 +25,7 @@
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/yourusername/peer2peer-eduhub.git
+   git clone https://github.com/NurullaMohammed/peer2peer-eduhub.git
    ```
 
 2. **Deploy to Tomcat:**
